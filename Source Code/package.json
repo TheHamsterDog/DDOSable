@@ -1,0 +1,21 @@
+{
+  "name": "ddos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ddos.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ddos": "node ddos.js",
+ "compile" : "pkg ."
+  },
+  "bin": "ddos.js",
+  "author": "TheFoxWithAnElytra",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "pkg": "^4.4.9"
+  },
+  "logo": {
+    "url": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/0a/0a8c66ab7918e9ce83296687d6c1d70fafe463b8.jpg"
+  }
+}
