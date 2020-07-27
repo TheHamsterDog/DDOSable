@@ -7,3 +7,13 @@ This tool is meant to be used for just Educational/Testing purposes.
 I will not, and can not be considered personally liable for any misuse of this software.
 All you need to do to use this tool is to download the application(for your operating system), and run it(it will ask you some questions, and tell execute the requests).
 Thank You!
+
+# How to use
+The first question asked is method.
+The methods you can use are
+- Get
+- Post
+- Put
+- Delete
+
+Enter domain in format of https://example.com or http://example.com
